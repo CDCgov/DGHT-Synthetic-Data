@@ -1,6 +1,7 @@
 ## Overview
 
 Work in progress.
+Please visit the Wiki page for project documentation.
 
 ## Acknowledgments
 
