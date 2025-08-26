@@ -1,6 +1,7 @@
 ## Overview
 
 Work in progress.
+Please visit the Wiki page for project documentation.
 
 ## Acknowledgments
 
@@ -9,7 +10,9 @@ Thank you to all who contributed to this package!
 * [Vania Wang](https://github.com/dev-vw)
 * [Florence Lee](https://github.com/flrnclee-cdc)
 * Linda Mattocks
-  
+
+ This is a continuation of a project originally started while Linda and Vania were detailed to GHSD.
+ 
 ## Public Domain Standard Notice
 This repository constitutes a work of the United States Government and is not
 subject to domestic copyright protection under 17 USC § 105. This repository is in
