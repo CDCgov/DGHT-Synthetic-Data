@@ -10,6 +10,10 @@
 
 
 # initialize function vars for testing
+<<<<<<< Updated upstream
+=======
+# one more test comment - test test
+>>>>>>> Stashed changes
 
 country <- "Eswatini"
 interactions <- read.csv("C:\\Users\\kwn5\\OneDrive - CDC\\GitHub\\DGHT-Synthetic-Data\\outputs")
