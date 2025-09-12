@@ -66,6 +66,7 @@ init_population <- function(country) {
   patient_data$phone_number <- gen_phonenumber(2500)
 
 # assign arv_initiation_date - Update the time frame for the sample to account for patient dob
+    #look at the code for pregnancy
   print("Adding variable: arv_initiation_date")
   patient_data$arv_initiation_date <- as.Date(patient_data$arv_initiation_date) + 
     sample(-14:14, size = nrow(patient_data), replace = TRUE)

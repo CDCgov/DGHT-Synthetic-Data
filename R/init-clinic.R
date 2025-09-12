@@ -52,7 +52,7 @@ init_clinic <- function(interactions, country) {
     # Identify the regimen prescribed during the previous clinic encounter and sample from the possible side effects (side_effect). 
       #1.	Randomly determine number of side effects assigned from 0 to the max for that regimen. 
      # 2.	Rare side effects (side_effect_rarity=“Yes”) have 0.5% chance of selection vs. others.
-  
+   #Note: look at the code for pregnancy
   clinic_df_init$side_effects <- clinic_df_init|> left_join(arv_side_effects, by = c("arv_regimen", "regimen_abbv")) |>
     
     sample(arv_side_effects$side_effect,
