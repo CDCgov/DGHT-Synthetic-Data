@@ -65,12 +65,18 @@ init_population <- function(country) {
   # phone numbers
   patient_data$phone_number <- gen_phonenumber(2500)
 
+# assign arv_initiation_date - Update the time frame for the sample to account for patient dob
+  print("Adding variable: arv_initiation_date")
+  patient_data$arv_initiation_date <- as.Date(patient_data$arv_initiation_date) + 
+    sample(-14:14, size = nrow(patient_data), replace = TRUE)
+  
+  
   # cleans up initial patient data
   # NOTE: This is NOT the final patient data: age_dec will need to be removed
   patient_data <- patient_data |> dplyr::select(operatingunit, patient_id,
                                                 first_name, last_name, sex,
                                                 agegroup, age_dec, age, dob,
-                                                preg_status, phone_number)
+                                                preg_status, phone_number,arv_initiation_date)
 
   # write_csv(patient_data, paste0("outputs/patient_data_", format(Sys.Date(), "%m%Y"), ".csv"))
   return(patient_data)
